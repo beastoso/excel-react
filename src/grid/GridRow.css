@@ -1,0 +1,16 @@
+.gridrow {
+    display: inline-flex;
+}
+
+.gridrow .gridcell:not(:first-child) {
+    width: 150px;
+    border-left: none;
+}
+
+.gridrow:not(:first-child) .gridcell {
+    border-top: none;
+}
+
+.grid-row.gridcell:not(:first-child) {
+    border: 1px solid grey;
+}

@@ -1,0 +1,50 @@
+
+.gridcell {
+    height: 28px;
+    line-height: 28px;
+    width: 30px;
+    border: 1px solid grey;
+}
+
+.gridcell:not(.label) {
+    cursor: pointer;
+}
+
+.gridcell input {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+}
+
+.gridcell div {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    padding: 0 2px;
+}
+
+.label, .grid-selected-cell__name {
+    min-width: 40px;
+    text-align: center;
+}
+
+.grid-selected-cell {
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.grid-selected-cell__name {
+    border: 1px solid grey;
+}
+
+.grid-selected-cell__value {
+    min-width: 540px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected div, .editing input {
+    border: 2px solid blue;
+}
